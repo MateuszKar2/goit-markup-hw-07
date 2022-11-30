@@ -26,6 +26,12 @@
   padding-bottom: 94px;
 }
 
+.icons-logos {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
 .icon-ourclient {
   border: 1px solid var(--iconcolor);
   border-radius: 4px;
@@ -41,9 +47,5 @@
   background-color: var(--white);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-logos {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
+
  
