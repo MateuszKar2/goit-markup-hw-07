@@ -1,4 +1,4 @@
-/*:root {
+  /*:root {
   --white: #fff;
   --black: #000;
   --blue: #2196f3;
@@ -42,9 +42,16 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}*/
+}
+.link-no-underline {
+  text-decoration: none;
+}
+.blue-text {
+  color: var(--blue);
+}
+*/
 
-/* header */
+/* header 
 
 .header {
   width: 1200px;
@@ -53,7 +60,7 @@ body {
   align-content: center;
 }
 
-.header-style-container {
+.header__style {
   display: flex;
   padding: 24px 15px 25px 15px;
   align-items: center;
@@ -61,7 +68,7 @@ body {
   flex-direction: row;
 }
 
-.logo-style {
+.header__logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -71,15 +78,11 @@ body {
   color: var(--black);
 }
 
-.blue-text {
-  color: var(--blue);
-}
-
-.item {
+.header__item {
   position: relative;
 }
 
-.active-link::after {
+.header__active-link::after {
   content: "";
   position: absolute;
   transform: translateY(29px);
@@ -92,55 +95,51 @@ body {
 
 }
 
-.link-no-underline {
-  text-decoration: none;
-}
-
-.navigate-list {
+.header__navigate-list {
   display: flex;
   list-style: none;
   gap: 46px;
   margin-left: 93px;
 }
 
-.link-style {
+.header__link-style {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14285714;
   color: var(--notblack);
 }
 
-.contact-style {
+.header__contact-style {
   gap: 50px;
   display: flex;
   list-style: none;
   margin-left: auto;
 }
 
-.icon-space {
+.header__icon-space {
   margin-right: 10px;
 }
 
-.contact-link-style:hover,
-.contact-link-style:focus {
+.header__contact-link-style:hover,
+.header__contact-link-style:focus {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link-style {
+.header__contact-link-style {
   color: var(--grey);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14285714;
 }
 
-.contact-style a {
+.header__contact-style a {
   display: flex;
   align-items: center;
-}
+}*/
 
-/* top-section */
-.top-section {
+/* top */
+/*.top {
   background-color: var(--darkgrey);
   color: var(--white);
   display: flex;
@@ -158,7 +157,7 @@ body {
 
 }
 
-.top-section-text {
+.top__text {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -170,7 +169,7 @@ body {
   user-select: none;
 }
 
-.top-section-button {
+.top__button {
   color: var(--white);
   font-weight: 700;
   font-size: 16px;
@@ -182,18 +181,7 @@ body {
   cursor: pointer;
   width: 200px;
   height: 50px;
-}
-
-.article-icon {
-  background-color: var(--notwhite);
-  border-radius: 4px;
-  height: 120px;
-  width: 270px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
+}*/
 
 /* top section portfolio */
 .portfolio-top-section {
@@ -371,7 +359,7 @@ img {
 }
 
 /* speciality */
-.speciality-header {
+/*.speciality {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -383,7 +371,7 @@ img {
   margin-bottom: 10px;
 }
 
-.specjality-text {
+.specjality__text {
   width: 270px;
   height: 75px;
   font-family: "Roboto";
@@ -395,7 +383,7 @@ img {
   color: var(--grey);
 }
 
-.speciality-list {
+.speciality__list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -404,9 +392,19 @@ img {
   padding-bottom: 94px;
   justify-content: center;
 }
+.speciality__icon {
+  background-color: var(--notwhite);
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}*/
 
 /* service */
-.service-header {
+/*.service {
   color: var(--notblack);
   font-weight: 700;
   font-size: 36px;
@@ -418,7 +416,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.service-list {
+.service__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -428,13 +426,13 @@ img {
   padding-bottom: 94px;
 }
 
-.service-item {
+.service__item {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.service-contents {
+.service__contents {
   position: absolute;
   text-transform: uppercase;
   font-family: "Roboto";
@@ -451,15 +449,16 @@ img {
   height: 70px;
   bottom: 0px;
   background: rgba(47, 48, 58, 0.8);
-}
+}*/
 
+/*team */
 .container {
   display: flex;
   flex-direction: column;
 }
 
 
-/*team */
+ 
 .team-background {
   background-color: var(--notwhite);
 }
