@@ -3,8 +3,14 @@
     border-bottom: 1px solid #ececec;
     margin: 0 auto;
     align-content: center;
-  }
+}
   
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
   body {
     font-family: "Roboto", "Raleway", sans-serif;
     color: var(--grey);
@@ -16,11 +22,7 @@
     padding: 0;
   }
   
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+   
   
   .text--secondary:hover,
   .text--secondary:focus {
