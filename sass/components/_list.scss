@@ -6,9 +6,8 @@
     padding-top: 94px;
     padding-bottom: 94px;
     justify-content: center;
-  }
   
-  .list__icon {
+  &__icon {
     background-color: var(--notwhite);
     border-radius: 4px;
     height: 120px;
@@ -19,7 +18,7 @@
     margin-bottom: 30px;
   }
   
-  .list__title {
+  &__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -30,3 +29,4 @@
     color: var(--notblack);
     margin-bottom: 10px;
   }
+}

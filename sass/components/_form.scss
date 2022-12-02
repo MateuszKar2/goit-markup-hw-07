@@ -1,34 +1,15 @@
-.form {
+  .form {
     padding-top: 72px;
     padding-left: 78px;
     display: flex;
     flex-direction: column;
-   }
-   .form span {
-     display: block;
-     margin-bottom: 20px;
-     color: var(--white);
-     font-weight: 700;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
-   }
-   .form input {
-     padding: 15px, 0, 15px, 16px;
-     box-sizing: border-box;
-     width: 358px;
-     height: 50px;
-     border: 1px solid rgba(255, 255, 255, 0.3);
-     background: none;
-     color: var(--white-item);
-     border-radius: 4px;
-   }
-   .form__signin {
+
+   &__signin {
      display: inline;
      margin-left: 12px;
    }
-   .form__signin button {
+
+   &__signin button {
      color: var(--white);
      background-color: var(--blue);
      box-shadow: o, 4px, 4px, rgba(0 0 0 / 0.15);
@@ -47,22 +28,22 @@
      align-items: center;
    
    }
-   .form__signin svg {
+   &__signin svg {
      fill: var(--white);
      margin-left: 24px;
    }
-   .form__signup-name {
+   &__signup-name {
      display: flex;
      flex-direction: row;
    }
-   .form__signup {
+   &__signup {
      display: flex;
      align-items: flex-end;
    }
-   .form__writing {
+   &__writing {
      display: block;
    }
-   .form__input {
+   &__input {
      width: 358px;
      height: 50px;
      color: rgba(255, 255, 255, 0.6);
@@ -71,3 +52,24 @@
      padding: 16px 15px;
      background-color: transparent;
    }
+  }
+  .form span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .form input {
+    padding: 15px, 0, 15px, 16px;
+    box-sizing: border-box;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    color: var(--white-item);
+    border-radius: 4px;
+  }

@@ -23,8 +23,17 @@
     margin: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  &__footer {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.71em;
+    color: var(--lgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .modal__close-button {
+  &__close-button {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -36,31 +45,18 @@
     justify-content: center;
     align-items: center;
   }
-  .modal__close-svg {
+  &__close-svg {
     position: absolute;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0 0 0 / 0.1);
     border-radius: 50%;
   }
-  .modal__close-icon {
+  &__close-icon {
     --color2: var(--black);
   }
-  .modal-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-  }
-  label > p {
-    font-size: 12px;
-    line-height: 1.16em;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    color: var(--lgray);
-    margin-bottom: 4px;
-  }
-  .modal__contents {
+  
+  &__contents {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -69,14 +65,14 @@
     gap: 10px;
     margin-bottom: 20px;
   }
-  .modal__header {
+  &__header {
     margin-bottom: 12px;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.15em;
     color:#000;
   }
-  .modal__contents-fill {
+  &__contents-fill {
     width: 448px;
     height: 40px;
     color: var(--dgray);
@@ -85,16 +81,17 @@
     padding-left: 42px;
     transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal__contents-block {
+  &__contents-block {
     display: flex;
     align-items: center;
     position: relative;
   }
-  .modal__contents-icon {
+  &__contents-icon {
     position: absolute;
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
   .modal__contents-fill.modal-text {
     height: 120px;
     padding: 12px 16px;
@@ -112,15 +109,7 @@
   .modal__contents-block:has(.modal__contents-fill:focus) .modal__contents-icon {
     fill: var(--blue);
   }
-  .modal__footer {
-    margin-bottom: 30px;
-    font-weight: 400;
-    line-height: 1.71em;
-    color: var(--lgray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
   .modal__footer-yes {
     border: 1px solid black;
     border-radius: 2px;
@@ -158,4 +147,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 76px;
     cursor: pointer;
+  }
+  label > p {
+    font-size: 12px;
+    line-height: 1.16em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--lgray);
+    margin-bottom: 4px;
+  }
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
   }

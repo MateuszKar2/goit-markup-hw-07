@@ -42,8 +42,8 @@ body {
   padding: 0 15px;
 }
 
-.blue-text:hover,
-.blue-text:focus {
+.text--secondary:hover,
+.text--secondary:focus {
   color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -53,11 +53,11 @@ body {
   padding-bottom: 94px;
 }
 
-.blue-text {
+.text--secondary {
   color: var(--blue);
 }
 
-.active-link::after {
+.active--link::after {
   content: "";
   position: absolute;
   transform: translateY(29px);
@@ -69,7 +69,7 @@ body {
   border-radius: 2px;
 }
 
-.link-no-underline {
+.text--no-underline {
   text-decoration: none;
 }
 /*resect-portfolio*/
@@ -134,7 +134,7 @@ img {
   color: var(--notblack);
 }
 
-.heading__conatct {
+.heading__contact {
   gap: 50px;
   display: flex;
   list-style: none;
@@ -145,20 +145,20 @@ img {
   margin-right: 10px;
 }
 
-.heading__conatct-link:hover,
-.heading__conatct-link:focus {
+.heading__contact-link:hover,
+.heading__contact-link:focus {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heading__conatct-link {
+.heading__contact-link {
   color: var(--grey);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14285714;
 }
 
-.heading__conatct a {
+.heading__contact a {
   display: flex;
   align-items: center;
 }
@@ -180,10 +180,9 @@ img {
   margin: auto;
   background-size: cover;
   max-width: 1600px;
-
 }
 
-.banner__text {
+ .banner__text {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -195,7 +194,7 @@ img {
   user-select: none;
 }
 
-.banner__button {
+ .banner__button {
   color: var(--white);
   font-weight: 700;
   font-size: 16px;
@@ -208,6 +207,7 @@ img {
   width: 200px;
   height: 50px;
 }
+
 
 /*list*/
 
@@ -298,7 +298,7 @@ img {
 }
 /*team */
 
-.team__background {
+.team {
   background-color: var(--notwhite);
 }
 

@@ -1,8 +1,7 @@
-.team__background {
+.team {
     background-color: var(--notwhite);
-  }
   
-  .team__title {
+  &__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -17,7 +16,7 @@
   }
   
   
-  .team__list {
+  &__list {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -26,14 +25,14 @@
     padding: 0 15px 102px;
   }
   
-  .team__picture {
+  &__picture {
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
   
-  .team__name {
+  &__name {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--notblack);
@@ -45,7 +44,7 @@
     padding-bottom: 10px;
   }
   
-  .team__signature {
+  &__signature {
     text-align: center;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -55,13 +54,14 @@
     padding-bottom: 30px;
   }
   
-  .team__icon {
+  &__icon {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
     align-items: center;
     margin: 0;
   }
+}
   
   .team__icon-link {
     fill: var(--iconcolor);
