@@ -571,11 +571,14 @@ body {
 
 
 /* top section portfolio */
+
+/*button*/
+
 .portfolio-top-section {
   margin: 94px 215px;
 }
 
-.top-section-list {
+.button__section {
   list-style: none;
   display: flex;
   gap: 8px;
@@ -583,7 +586,7 @@ body {
   margin: 0px;
 }
 
-.button-portfolio {
+.button__section-single {
   background-color: var(--notwhite);
   border-width: 0;
   font-size: 16px;
@@ -595,19 +598,7 @@ body {
   cursor: pointer;
 }
 
-.button-portfolios {
-  background-color: #2196f3;
-  border-width: 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.625;
-  border-radius: 3px;
-  padding: 6px 22px;
-  font-family: "Roboto";
-  cursor: pointer;
-}
-
-.blue-background:hover {
+.button__section-blue:hover {
   background-color: var(--blue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -615,52 +606,9 @@ body {
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*gadget*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  display: block;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: var(--white-item);
-  background-color: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.caption-border {
-  padding: 20px 24px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-}
-
-.photo-portfolio {
-  color: #212121
-}
-
-.cards-box {
+.gadget {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
@@ -672,18 +620,33 @@ img {
   color: var(--notblack);
 }
 
-.cards-items {
+ .gadget__border {
+  padding: 20px 24px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.gadget__writting {
+  color: #212121
+}
+
+.gadget__single {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.overflow {
+.gadget__picture {
   overflow: hidden;
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.overlay {
+.gadget__contents {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms ease;
   transform: translateY(294px);
@@ -710,43 +673,42 @@ img {
   opacity: 90%;
 }
 
-.overflow:hover .overlay {
+.gadget__picture:hover .gadget__contents {
   transform: translateY(0);
 }
 
 
-.cards-items:hover,
-.cards-items:focus {
+.gadget__single:hover,
+.gadget__single:focus {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   color: var(--white);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*background-color: var(--blue);*/
 }
 
-.project-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--notblack);
-  margin: 0px;
-  padding: 20px 24px 4px 24px;
-  text-align: left;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
 }
 
-.project-description {
-  font-size: 16px;
-  line-height: 1.875;
-  color: var(--grey);
-  margin: 0px;
-  padding: 0px 24px 20px 24px;
+ul {
+  list-style: none;
 }
 
- 
-
+img {
+  display: block;
+}
 /* 
 ===============================
 OKNO MODALNE
@@ -778,7 +740,7 @@ OKNO MODALNE
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.close-button {
+.modal__close-button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -790,14 +752,14 @@ OKNO MODALNE
   justify-content: center;
   align-items: center;
 }
-.close-svg {
+.modal__close-svg {
   position: absolute;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0 0 0 / 0.1);
   border-radius: 50%;
 }
-.close-icon {
+.modal__close-icon {
   --color2: var(--black);
 }
 .modal-form {
@@ -814,7 +776,7 @@ label > p {
   color: var(--lgray);
   margin-bottom: 4px;
 }
-.modal-inputs {
+.modal__contents {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -823,14 +785,14 @@ label > p {
   gap: 10px;
   margin-bottom: 20px;
 }
-.modal-header {
+.modal__header {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15em;
   color:#000;
 }
-.modal-input {
+.modal__contents-fill {
   width: 448px;
   height: 40px;
   color: var(--dgray);
@@ -839,17 +801,17 @@ label > p {
   padding-left: 42px;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input-wrapper {
+.modal__contents-block {
   display: flex;
   align-items: center;
   position: relative;
 }
-.modal-icon {
+.modal__contents-icon {
   position: absolute;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input.modal-text {
+.modal__contents-fill.modal-text {
   height: 120px;
   padding: 12px 16px;
   color: rgba(117, 117, 117, 0.5);
@@ -860,13 +822,13 @@ label > p {
   color: var(--lgray);
   resize: none;
 }
-.modal-input:focus {
+.modal__contents-fill:focus {
   outline-color: var(--blue);
 }
-.modal-input-wrapper:has(.modal-input:focus) .modal-icon {
+.modal__contents-block:has(.modal__contents-fill:focus) .modal__contents-icon {
   fill: var(--blue);
 }
-.modal-agreement {
+.modal__footer {
   margin-bottom: 30px;
   font-weight: 400;
   line-height: 1.71em;
@@ -875,32 +837,32 @@ label > p {
   align-items: center;
   justify-content: center;
 }
-.checkmark {
+.modal__footer-yes {
   border: 1px solid black;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: white;
 }
-.checkmark-wrapper {
+.modal__footer .modal__footer-yes {
   display: flex;
   margin-right: 8px;
 }
-.modal-agreement [type="checkbox"] {
+.modal__footer [type="checkbox"] {
   visibility: hidden;
   width: 0;
   height: 0;
   opacity: 0;
 }
-.modal-agreement:has(input:checked) .checkmark {
+.modal__footer:has(input:checked) .modal__footer-yes {
   --color1: white;
   background-color: #2196f3;
   border: none;
   border-radius: 2px;
 }
-.modal-agreement a {
+.modal__footer a {
   color: var(--blue);
 }
-.modal-submit {
+.modal__footer-submit {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88em;
