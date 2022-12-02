@@ -380,12 +380,6 @@ img {
 
 /* Ourclient section */
 
-.ourclient__logo {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
 .ourclient {
   padding-top: 94px;
   margin: 0;
@@ -395,6 +389,12 @@ img {
   align-items: center;
   width: 100%;
 }
+
+.ourclient__logo {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+ }
 
 .ourclient__title {
   font-family: "Roboto";
