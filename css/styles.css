@@ -16,6 +16,15 @@
   --backgroundbackdrop: rgba(000, 000, 000, 0.2);
 }
 
+/* resect-header */
+
+.header {
+  width: 1200px;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+  align-content: center;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--grey);
@@ -44,23 +53,6 @@ body {
   padding-bottom: 94px;
 }
 
-/* header */
-
-.header {
-  width: 1200px;
-  border-bottom: 1px solid #ececec;
-  margin: 0 auto;
-  align-content: center;
-}
-
-.heading {
-  display: flex;
-  padding: 24px 15px 25px 15px;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .blue-text {
   color: var(--blue);
 }
@@ -80,11 +72,39 @@ body {
 .link-no-underline {
   text-decoration: none;
 }
+/*resect-portfolio*/
 
-.heading__navigate-item {
-  position: relative;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
 /*heading*/
+
+.heading {
+  display: flex;
+  padding: 24px 15px 25px 15px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
 .heading__style {
   font-family: "Raleway";
@@ -103,7 +123,11 @@ body {
   margin-left: 93px;
 }
 
-.link-style {
+.heading__navigate-item {
+  position: relative;
+}
+
+.heading__link-style {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14285714;
@@ -354,7 +378,7 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Our clients section */
+/* Ourclient section */
 
 .ourclient__logo {
   list-style: none;
@@ -686,29 +710,6 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  display: block;
-}
 /* 
 ===============================
 OKNO MODALNE
